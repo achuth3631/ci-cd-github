@@ -1,0 +1,27 @@
+<template>
+    <lightning-card title="Local Properties one Way data binding">
+
+        <lightning-input
+          type="text"
+          label="enter course name"
+          placeholder="Enter course"
+          onkeyup={changeHandler}>
+     </lightning-input>
+
+     <div>my name is {fullName} and my course is {course}</div>
+
+    </lightning-card>  
+
+    <lightning-card title="Track properties">
+
+        <lightning-input
+          type="text"
+          label="enter City name"
+          placeholder="Enter new ZipCode"
+          onkeyup={tarckHandler}>
+     </lightning-input>
+
+     <div>my name is {address.city} and my zipcode is {address.zipcode}</div>
+
+    </lightning-card>  
+</template>

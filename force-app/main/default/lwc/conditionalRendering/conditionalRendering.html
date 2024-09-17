@@ -1,0 +1,26 @@
+<template>
+    <lightning-card title="Conditional Rendering">
+        <div class="slds-var-m-around_medium">
+            <lightning-button 
+               variant="brand"
+               label="Show Data"
+               onclick={handleClick}
+            ></lightning-button>
+
+            <lightning-button 
+               variant="brand"
+               label="hide Data"
+               onclick={handleClick1}
+            ></lightning-button>
+
+            <template if:true={isVisible}>
+                <div>welcome to salesforce</div>
+            </template>
+
+            <template if:false={isVisible}>
+              <!--  <div>Please click on the above show button to see data</div> -->
+            </template>
+
+        </div>
+    </lightning-card>
+</template>
